@@ -48,6 +48,10 @@ def main(argv):
          inputfile = arg
       elif opt in ("-o", "--ofile"):
          outputfile = arg
+   if inputfile == '':
+      inputfile = raw_input('File where the names to be translated exist (ex. names.txt) : ')
+   if outputfile =='':
+      outputfile = raw_input('File where the translated names will be written (ex. trnames.txt) : ')    
    print 'Input file is "', inputfile
    print 'Output file is "', outputfile
 
